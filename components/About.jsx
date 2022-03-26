@@ -28,7 +28,11 @@ const About = () => {
           <div className={styles.rightSection}>
             <h1 className="text-xl md:p-6 sm:p-4">
               <span className="text-4xl"> H</span>i, My Name is{" "}
-              <span className= {theme === 'dark' ? styles.nameDarkMode : styles.nameLightMode  }>
+              <span
+                className={
+                  theme === "dark" ? styles.nameDarkMode : styles.nameLightMode
+                }
+              >
                 Febin Varghese
               </span>
             </h1>
@@ -39,21 +43,21 @@ const About = () => {
               networking and developing apps especially web application
             </p>
             <div className={styles.iconContainer}>
-              <i className={styles.icons}>
-                <Link href="/">
+              <Link href="/">
+                <i className={styles.icons}>
                   <FaInstagram />
-                </Link>
-              </i>
-              <i className={styles.icons}>
+                </i>
+              </Link>
               <Link href="https://github.com/febinvarghese1">
+                <i className={styles.icons}>
                   <VscGithub />
-                </Link>
-              </i>
-              <i className={styles.icons}>
+                </i>
+              </Link>
               <Link href="https://www.linkedin.com/in/febin-varghese-0530191b8">
+                <i className={styles.icons}>
                   <FaLinkedin />
-                </Link>
-              </i>
+                </i>
+              </Link>
             </div>
           </div>
         </div>

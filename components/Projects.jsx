@@ -21,7 +21,7 @@ const Projects = ({ projects }) => {
       <h1 className={projectStyles.projectTitle}>Projects: </h1>
       <div className={projectStyles.projects}>
         {projects.map(({id,image,title,description,tags,source,visit}) => (
-          <div>
+          <div key={id}>
             <motion.div
               whileHover={hoverAnimate}
               className={projectStyles.project}
