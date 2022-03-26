@@ -1,0 +1,45 @@
+.container {
+  min-height: 100vh;
+  padding: 0px 100px;
+  color: black;
+  margin-top: 50px;
+  font-family: "Merriweather";
+}
+
+.projectTitle {
+  font-size: 40px;
+  color: rgb(50, 207, 207);
+  border-bottom: 3px solid blue;
+  width: max-content;
+  text-align: start;
+  font-family: monospace;
+  margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+    text-align: center;
+    width: 400px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 3rem;
+    place-items: center;
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+
+@media screen and (max-width:640px) {
+    
+    .projects{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .project{
+        width: 250px;
+    }
+}

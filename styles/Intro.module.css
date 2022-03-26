@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Merriweather:ital,wght@1,300&family=Playfair+Display:ital@1&family=Prata&display=swap");
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5rem;
+}
+
+.card {
+  padding: 100px 100px 0px 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 5rem;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.content h1 {
+  position: absolute;
+  top: 0;
+  display: inline;
+  font-weight: 600;
+  font-size: 5.9rem;
+}
+.content h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #4dde;
+}
+.content h1:nth-child(2) {
+  color: cyan;
+  animation: animateContent 5s ease-in-out infinite;
+}
+
+.contentLight h1 {
+  position: absolute;
+  top: 0;
+  display: inline;
+  font-weight: 600;
+
+  font-size: 5.9rem;
+}
+.contentLight h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px grey;
+}
+.contentLight h1:nth-child(2) {
+  color: red;
+  animation: animateContent 5s ease-in-out infinite;
+}
+
+@keyframes animateContent {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 52%,
+      19% 56%,
+      34% 66%,
+      45% 70%,
+      59% 69%,
+      71% 67%,
+      80% 59%,
+      92% 52%,
+      98% 50%,
+      100% 100%,
+      0% 99%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 65%,
+      19% 72%,
+      33% 73%,
+      45% 70%,
+      58% 64%,
+      69% 58%,
+      79% 51%,
+      89% 45%,
+      100% 43%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: serif;
+}
+.cardBtn {
+  background-color: whitesmoke;
+  border: none;
+  padding: 10px;
+  width: 120px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  box-shadow: 0px 0px 30px rgba(255, 72, 72, 0.75);
+  color: black;
+  font-family: "Prata";
+}
+.cardBtnDark {
+  background-color: whitesmoke;
+  border: none;
+  padding: 10px;
+  width: 120px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  box-shadow: 0px 0px 30px rgba(72, 218, 255, 0.75);
+  color: black;
+  font-family: "Prata";
+}
+
+@media screen and (max-width: 769px) {
+  .content h1,
+  .contentLight h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .btnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content,
+  .contentLight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40;
+  }
+  .content h1,
+  .contentLight h1 {
+    width: 100vw;
+    font-size: 2.9rem;
+    text-align: center;
+  }
+  .description {
+    margin-top: 7rem;
+  }
+
+  .card {
+    padding: 40px;
+    margin-top: 3rem;
+    
+  }
+  .cardBtn {
+    margin-top: 12px;
+  }
+}

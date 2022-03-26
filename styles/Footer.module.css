@@ -1,0 +1,44 @@
+.animateStatus {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: turquoise;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.avatar {
+  margin-left: 10px;
+  position: relative;
+}
+.photo {
+  border-radius: 50%;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: greenyellow;
+  border: 0.3px solid black;
+  position: absolute;
+  top: calc(45px - 15px);
+  right: 0;
+  animation: animate infinite 1.5s ease-in;
+}

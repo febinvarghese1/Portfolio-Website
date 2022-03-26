@@ -1,0 +1,57 @@
+
+
+.line{
+    width:50vw;
+    height: 5px;
+    background-image: linear-gradient(to right, lightblue, red);
+}
+
+
+.techTitle{
+    font-size: 2.5rem;
+    font-family: "Merriweather";
+    font-weight: 400;
+
+}
+.container h3{
+    font-size:2.1rem;
+    margin-bottom: 50px;
+    font-family: "Merriweather";
+}
+
+.list{
+    display: flex;
+
+}
+
+.listContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.list > li{
+    margin-left: 15px;
+    border: 2.5px solid rgb(26, 209, 209);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    padding:15px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+    .techTitle{
+        font-size: 2rem;
+    }
+        .list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .list li{
+            width:50vw;
+            margin-top: 40px;
+        }
+}
