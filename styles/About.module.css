@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: center;
   padding: 30px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "source code pro";
   
 }
 .subContainerDark{
@@ -28,8 +28,8 @@
   box-shadow: 6px 8px 9px rgba(0,0,0,0.65);
 }
 .subContainerLight{
-  border: 1px solid white;
   padding:0px 20px 20px 20px;
+  box-shadow: 0px 0px 25px rgba(255,255,255,0.5);
 }
 
 .rightSection{
@@ -40,15 +40,15 @@
   margin-left: 20px;
 }
 .nameLightMode{
-  font-size:2.4rem;
-  font-style: italic;
-  font-weight: 500;
+  font-size:2.5rem;
+  font-style: normal;
+  font-weight: 700;
   color: rgb(252, 84, 84);
 }
 .nameDarkMode{
-  font-size:2.4rem;
-  font-style: italic;
-  font-weight: 500;
+  font-size:2.5rem;
+  font-style: normal;
+  font-weight: 700;
   color: cyan;
 }
 
@@ -60,6 +60,7 @@
 }
 .icons:hover{
   transform: scale(1.1);
+  color: dimgrey;
 }
 
 .iconContainer {
@@ -73,13 +74,19 @@
 
 @media screen and (max-width: 768px) {
   .container{
-    margin-top: 5rem;
+    margin-top: 3rem;
+  }
+  .nameDarkMode, .nameLightMode{
+    font-size: 1.6rem;
+    padding-top: 15px;
   }
   .wrapper{
     flex-direction: column;
-    padding: 15px;
-   
-    width: 80%;
+    padding: 10px;
+    width: 100%;
+  }
+  .rightSection{
+    margin-top: 30px;
   }
   .subContainerLight{
     border: none;
@@ -87,5 +94,7 @@
   .description{
     padding: 7px;
     font-size: 20px;
+    margin-top: 10px;
   }
 }
+

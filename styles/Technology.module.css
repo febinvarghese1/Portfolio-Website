@@ -4,19 +4,23 @@
     width:50vw;
     height: 5px;
     background-image: linear-gradient(to right, lightblue, red);
+    margin-top: 60px;
 }
 
 
 .techTitle{
     font-size: 2.5rem;
-    font-family: "Merriweather";
+    margin-top: 40px;
+    font-family: "Cairo";
     font-weight: 400;
+    text-transform: uppercase;
 
 }
 .container h3{
     font-size:2.1rem;
     margin-bottom: 50px;
-    font-family: "Merriweather";
+    text-transform: capitalize;
+    font-family: "source code pro";
 }
 
 .list{
