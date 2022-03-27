@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Crete+Round:ital@1&family=Noticia+Text:ital@1&family=Noto+Serif+Display:ital,wght@1,300&family=Playfair+Display:ital@1&family=Prata&family=Roboto&family=Source+Code+Pro&display=swap');
 
 .container {
   width: 100%;
@@ -99,7 +98,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "source code pro";
+  font-family: "Source Code Pro";
 }
 .cardBtn {
   background-color: whitesmoke;
