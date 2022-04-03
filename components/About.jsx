@@ -27,13 +27,13 @@ const About = () => {
           </div>
           <div className={styles.rightSection}>
             <h1 className="text-xl md:p-6 sm:p-4">
-              <span className="text-4xl"> H</span>i, My Name is{" "}
+              <span className="text-4xl"> H</span>ello, I am{" "}
               <span
                 className={
                   theme === "dark" ? styles.nameDarkMode : styles.nameLightMode
                 }
               >
-                Febin Varghese
+                Febin
               </span>
             </h1>
             <p className={styles.description}>
